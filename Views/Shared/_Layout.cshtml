@@ -1,0 +1,41 @@
+﻿@using SteinLundbeck.Components.Extensions;
+@using System.IO;
+
+<!DOCTYPE html>
+<html lang="@Thread.CurrentThread.CurrentCulture.Name" class="creator-full">
+<head>
+    <site:head files="Layout.css" />
+
+    @await RenderSectionAsync("STYLE", false)
+</head>
+<body>
+    <site:pre />
+
+    <div class="main-content-wrap">
+        <div class="top">
+            <header>
+                <img src="~/IMAGE/SLTech-logo.png" alt="Stein Lundbeck" class="logo" />
+                <h1 class="h1-r">Stein Lundbeck <span class="title font-r-22 mrg-lg-left">@_local["Title"]</span></h1>
+            </header>
+            <div class="language-bar flex-end-center">
+                <a asp-controller="SL" asp-action="SetCulture" asp-all-route-data="@(new { culture = "nb-NO", uid = Guid.NewGuid()}.ToRouteData())" title="Norsk"><img src="~/IMAGE/flag-no.png" class="flag norwegian" alt="Norwegian flag" /></a>
+                <a asp-controller="SL" asp-action="SetCulture" asp-all-route-data="@(new { culture = "en-US", uid = Guid.NewGuid()}.ToRouteData())" title="English"><img src="~/IMAGE/flag-us.png" class="flag english" alt="US flag" /></a>
+            </div>
+        </div>
+        <div class="content-wrap">
+            <div class="content">
+                <main role="main">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+        <div class="bottom bg-contain-bottom-fixed">
+            
+        </div>
+    </div>
+
+    <site:footer />
+
+    @await RenderSectionAsync("SCRIPT", required: false)
+</body>
+</html>

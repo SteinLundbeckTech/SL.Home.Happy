@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\GoogleDrive\Projects\LC_TECH\Sites\SL.Home.Happy\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-05-21T02:16:22.8148093Z;True|2024-05-09T03:47:04.3866522+02:00;True|2024-05-09T03:25:34.5673683+02:00;True|2024-05-01T15:35:03.3577482+02:00;True|2024-05-01T11:43:13.8773933+02:00;True|2024-05-01T11:13:49.5780977+02:00;False|2024-05-01T09:06:41.0839601+02:00;False|2024-05-01T08:57:13.6868386+02:00;False|2024-05-01T08:45:19.1194936+02:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

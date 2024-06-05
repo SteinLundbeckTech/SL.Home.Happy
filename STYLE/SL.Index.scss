@@ -1,0 +1,68 @@
+﻿@import "Creator//Media";
+
+.text-wrap {
+    padding: 7px;
+    line-height: 1.6;
+
+    & > .link-wrap {
+        padding-top: 40px;
+        padding-left: unset;
+        text-align: center;
+
+        & a {
+            color: #3973cc;
+        }
+    }
+
+    & > .solutions-wrap {
+        & a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #2355a1;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &.source-code-link {
+                color: #0b4294;
+                font-weight: normal;
+            }
+        }
+
+        & > p.source-wrap {
+            text-align: center;
+            padding: 4px;
+            margin-top: 40px;
+        }
+
+        & > span.separator {
+            $mrg: 12px;
+
+            font-size: 22px;
+            margin-left: $mrg;
+            margin-right: $mrg;
+            opacity: 0.2;
+        }
+    }
+}
+
+@include media() {
+    .text-wrap {
+        padding: 22px;
+
+        & > .link-wrap {
+            text-align: unset;
+            padding-top: 40px;
+            padding-left: 120px;
+        }
+
+        & > .solutions-wrap {
+            margin-top: 20px;
+
+            & > p.source-wrap {
+                padding: 34px;
+            }
+        }
+    }
+}

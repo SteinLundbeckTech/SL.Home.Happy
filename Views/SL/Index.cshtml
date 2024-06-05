@@ -1,0 +1,30 @@
+﻿<site:view id="117" files="SL.Index.css" />
+<div>   
+    <header>
+        <h2 class="h3-r">@_local["Header"]</h2>
+    </header>
+    <div class="text-wrap">
+        @Html.Raw(_local["Info"])
+        <br />
+        <div class="link-wrap">
+            <a href="mailto:stein@sltech.no" class="font-22 a-clean" title="@_local["SendEmail", true]"><icon awesome="Envelope" />@_local["SendEmail", true]</a>
+            <a href="/FILE/Stein_Lundbeck_CV.pdf" class="font-22 a-clean mrg-lg-left" title="@_local["DownloadCV"]"><icon awesome="DocPDF" />@_local["DownloadCV"]</a>
+        </div>
+        <div class="solutions-wrap pad-lg align-center">
+            <a href="https://kaurhudklinikk.no/" target="_blank" title="Kaur Hudklinikk">Kaur Hudklinikk</a>
+            <span class="separator">|</span>
+            <a href="https://github.com/Lundbeck-Tech/Creator" target="_blank" title="Creator framework">Creator framework</a>
+            <span class="separator">|</span>
+            <a href="http://bohem63.com" target="_blank" title="Line Eldor">Line Eldor</a>
+            <span class="separator">|</span>
+            <a href="http://barehyggelig.com" target="_blank" title="Bare hyggelig">Bare hyggelig</a>
+            <span class="separator">|</span>
+            <a href="https://faktura24.no" target="_blank" title="Faktura24">Faktura24</a>
+            <span class="separator">|</span>
+            <a href="https://github.com/Lundbeck-Tech" target="_blank" title="Github"><icon awesome="GitHub" />Github</a>
+            <p class="source-wrap">
+                <a href="https://github.com/Lundbeck-Tech/SL.Home.Happy" target="_blank" class="source-code-link a-clean" title="@_local["SourceCodeToSite"]">@_local["SourceCodeToSite"]&nbsp;<span class="symbol"><icon awesome="Code" /></span></a>
+            </p>
+        </div>
+    </div>
+</div>

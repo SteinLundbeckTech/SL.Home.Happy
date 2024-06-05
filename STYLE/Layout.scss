@@ -1,0 +1,110 @@
+﻿@import "Creator//Media";
+
+body {
+    background: #82d0fd;
+    background: linear-gradient(135deg, #82d0fd 0%, #c2e9fb 100%);
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    color: #011f28;
+
+    & main {
+        padding-bottom: 0px !important;
+    }
+
+    & .main-content-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+        grid-template-rows: 80px auto 114px;
+        position: relative;
+
+        & > .top {
+            & > header {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                & > img.logo {
+                    height: 54px;
+                    margin-right: 14px;
+                    margin-left: 6px;
+                }
+
+                & > h1 {
+                    position: relative;
+                    top: 2px;
+
+                    & > .title {
+                        display: block;
+                    }
+                }
+            }
+
+            & > div.language-bar {
+                padding-right: 30px;
+                position: relative;
+                top: -30px;
+
+                & img.flag {
+                    $mrg: 4px;
+
+                    width: 30px;
+                    margin-left: $mrg;
+                    margin-right: $mrg;
+                }
+            }
+        }
+
+        & > .content-wrap {
+            & > .content {
+                padding: 12px;
+            }
+        }
+
+        & > .bottom {
+            background-image: url("/IMAGE/bottom-bg.png");
+
+            & .illu {
+                max-width: 130px;
+            }
+        }
+    }
+}
+
+@include media() {
+    body {
+        & .main-content-wrap {
+            grid-template-rows: 140px 467px 363px;
+
+            & > .top {
+                & > header {
+                    justify-content: center;
+
+                    & > img.logo {
+                        height: 84px;
+                    }
+                }
+            }
+
+            & > .content-wrap {
+                & > .content {
+                    width: 1560px;
+                    margin: auto;
+                }
+            }
+
+            & > .bottom {
+                & .illu {
+                    max-width: 413px;
+                }
+            }
+        }
+    }
+}
+
+@include media(SM) {
+    #BarMenu {
+        right: 0;
+    }
+}
