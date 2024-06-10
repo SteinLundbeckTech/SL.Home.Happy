@@ -2,6 +2,10 @@ body {
   background: #82d0fd;
   background: linear-gradient(135deg, #82d0fd 0%, #c2e9fb 100%);
   background-attachment: fixed;
+  background-image: url("/IMAGE/main-bg-sm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 100vh;
   color: #011f28;
@@ -34,7 +38,7 @@ body .main-content-wrap > .top > header > h1 > .title {
   display: block;
 }
 body .main-content-wrap > .top > div.language-bar {
-  padding-right: 30px;
+  padding-right: 10px;
   position: relative;
   top: -30px;
 }
@@ -53,7 +57,16 @@ body .main-content-wrap > .bottom .illu {
   max-width: 130px;
 }
 
+#BlogLink {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
 @media (min-width: 768px) {
+  body {
+    background-image: url("/IMAGE/main-bg.jpg");
+  }
   body .main-content-wrap {
     grid-template-rows: 140px 467px 363px;
   }
@@ -71,11 +84,6 @@ body .main-content-wrap > .bottom .illu {
     max-width: 413px;
   }
 }
-@media (min-width: 576px) {
-  #BarMenu {
-    right: 0;
-  }
-}
 
 .text-wrap {
   padding: 7px;
@@ -87,24 +95,30 @@ body .main-content-wrap > .bottom .illu {
   text-align: center;
 }
 .text-wrap > .link-wrap a {
-  color: #3973cc;
+  color: #032c4a;
 }
 .text-wrap > .solutions-wrap a {
   text-decoration: none;
   font-weight: bold;
-  color: #2355a1;
+  color: #ff6a00;
+  font-size: 20px;
+  text-shadow: 1px 1px black;
 }
 .text-wrap > .solutions-wrap a:hover {
   text-decoration: underline;
 }
 .text-wrap > .solutions-wrap a.source-code-link {
-  color: #0b4294;
+  color: #032c4a;
   font-weight: normal;
 }
 .text-wrap > .solutions-wrap > p.source-wrap {
   text-align: center;
   padding: 4px;
   margin-top: 40px;
+}
+.text-wrap > .solutions-wrap > p.source-wrap > a.source-code-link {
+  color: #ff6a00;
+  text-shadow: 1px 1px black;
 }
 .text-wrap > .solutions-wrap > span.separator {
   font-size: 22px;

@@ -4,6 +4,10 @@ body {
     background: #82d0fd;
     background: linear-gradient(135deg, #82d0fd 0%, #c2e9fb 100%);
     background-attachment: fixed;
+    background-image: url("/IMAGE/main-bg-sm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
     color: #011f28;
@@ -42,7 +46,7 @@ body {
             }
 
             & > div.language-bar {
-                padding-right: 30px;
+                padding-right: 10px;
                 position: relative;
                 top: -30px;
 
@@ -72,8 +76,16 @@ body {
     }
 }
 
+#BlogLink {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
 @include media() {
     body {
+        background-image: url("/IMAGE/main-bg.jpg");
+
         & .main-content-wrap {
             grid-template-rows: 140px 467px 363px;
 
@@ -100,11 +112,5 @@ body {
                 }
             }
         }
-    }
-}
-
-@include media(SM) {
-    #BarMenu {
-        right: 0;
     }
 }

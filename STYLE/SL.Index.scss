@@ -1,5 +1,7 @@
 ﻿@import "Creator//Media";
 
+$clr: #032c4a;
+
 .text-wrap {
     padding: 7px;
     line-height: 1.6;
@@ -10,7 +12,7 @@
         text-align: center;
 
         & a {
-            color: #3973cc;
+            color: $clr;
         }
     }
 
@@ -18,14 +20,16 @@
         & a {
             text-decoration: none;
             font-weight: bold;
-            color: #2355a1;
+            color: #ff6a00;
+            font-size: 20px;
+            text-shadow: 1px 1px black;
 
             &:hover {
                 text-decoration: underline;
             }
 
             &.source-code-link {
-                color: #0b4294;
+                color: $clr;
                 font-weight: normal;
             }
         }
@@ -34,6 +38,11 @@
             text-align: center;
             padding: 4px;
             margin-top: 40px;
+
+            & > a.source-code-link {
+                color: #ff6a00;
+                text-shadow: 1px 1px black;
+            }
         }
 
         & > span.separator {

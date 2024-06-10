@@ -2,6 +2,10 @@ body {
   background: #82d0fd;
   background: linear-gradient(135deg, #82d0fd 0%, #c2e9fb 100%);
   background-attachment: fixed;
+  background-image: url("/IMAGE/main-bg-sm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 100vh;
   color: #011f28;
@@ -34,7 +38,7 @@ body .main-content-wrap > .top > header > h1 > .title {
   display: block;
 }
 body .main-content-wrap > .top > div.language-bar {
-  padding-right: 30px;
+  padding-right: 10px;
   position: relative;
   top: -30px;
 }
@@ -53,7 +57,16 @@ body .main-content-wrap > .bottom .illu {
   max-width: 130px;
 }
 
+#BlogLink {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
 @media (min-width: 768px) {
+  body {
+    background-image: url("/IMAGE/main-bg.jpg");
+  }
   body .main-content-wrap {
     grid-template-rows: 140px 467px 363px;
   }
@@ -69,10 +82,5 @@ body .main-content-wrap > .bottom .illu {
   }
   body .main-content-wrap > .bottom .illu {
     max-width: 413px;
-  }
-}
-@media (min-width: 576px) {
-  #BarMenu {
-    right: 0;
   }
 }

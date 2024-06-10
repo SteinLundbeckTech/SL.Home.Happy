@@ -9,9 +9,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\DEV\Assets\SL.Assets.Core\SL.Assets.Core.csproj" />
     <ProjectReference Include="..\..\DEV\Assets\SL.Assets\SL.Assets.csproj" />
-    <ProjectReference Include="..\..\DEV\Assets\SteinLundbeck.Components.Core\SteinLundbeck.Components.Core.csproj" />
-    <ProjectReference Include="..\..\DEV\Assets\SteinLundbeck.Components\SteinLundbeck.Components.csproj" />
-    <ProjectReference Include="..\..\DEV\Creator\Creator.Components\Creator.Components.csproj" />
+    <ProjectReference Include="..\..\DEV\Creator\Creator.Other\Creator.Components\Creator.Components.csproj" />
+    <ProjectReference Include="..\..\DEV\SteinLundbeck.Components.Core\SteinLundbeck.Components.Core.csproj" />
+    <ProjectReference Include="..\..\DEV\SteinLundbeck.Components\SteinLundbeck.Components.csproj" />
   </ItemGroup>
 
 </Project>

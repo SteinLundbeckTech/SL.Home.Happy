@@ -4,14 +4,14 @@
     @Description          : null
 */
 
-using SL.Assets.Core;
 using SL.Assets.Core.Components;
 using SL.Assets.Core.Components.ApplicationFeatures;
 
 WebApplicationBuilder bld = WebApplication.CreateBuilder(args);
 
-AssetsConfig.AddAssets(bld,
-    new Minify(MinifyTargets.Production),
-    new Content(),
-    new SSL(),
-    new DefaultRoute("SL", "Index"));
+new AssetsConfig(args)
+    .AddAssets(null, true,
+        new Minify(),
+        new Content(),
+        new SSL(),
+        new DefaultRoute("SL", "Index"));
