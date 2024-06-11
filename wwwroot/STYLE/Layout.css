@@ -17,8 +17,11 @@ body .main-content-wrap {
   display: grid;
   grid-template-columns: 1fr;
   align-items: flex-start;
-  grid-template-rows: 80px auto 114px;
+  grid-template-rows: 130px auto 114px;
   position: relative;
+}
+body .main-content-wrap > .top > div.blog-link-wrap {
+  padding: 8px;
 }
 body .main-content-wrap > .top > header {
   display: flex;

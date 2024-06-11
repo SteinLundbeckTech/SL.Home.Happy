@@ -20,10 +20,14 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         align-items: flex-start;
-        grid-template-rows: 80px auto 114px;
+        grid-template-rows: 130px auto 114px;
         position: relative;
 
         & > .top {
+            & > div.blog-link-wrap {
+                padding: 8px;
+            }
+
             & > header {
                 display: flex;
                 justify-content: flex-start;

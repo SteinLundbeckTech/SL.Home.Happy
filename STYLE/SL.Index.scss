@@ -20,9 +20,8 @@ $clr: #032c4a;
         & a {
             text-decoration: none;
             font-weight: bold;
-            color: #ff6a00;
+            color: $clr;
             font-size: 20px;
-            text-shadow: 1px 1px black;
 
             &:hover {
                 text-decoration: underline;
@@ -40,8 +39,7 @@ $clr: #032c4a;
             margin-top: 40px;
 
             & > a.source-code-link {
-                color: #ff6a00;
-                text-shadow: 1px 1px black;
+                color: $clr;
             }
         }
 
@@ -52,6 +50,30 @@ $clr: #032c4a;
             margin-left: $mrg;
             margin-right: $mrg;
             opacity: 0.2;
+        }
+    }
+
+    & > .social-wrap {
+        & > a {
+            font-size: 32px;
+            text-decoration: none;
+            color: $clr;
+
+            &:hover {
+                color: rgba($clr, 0.7);
+            }
+        }
+
+        & > span.separator {
+            $mrg: 6px;
+
+            font-size: 30px;
+            position: relative;
+            top: -3px;
+            color: rgba($clr, 0.6);
+            color: rgba($clr, 0.4);
+            margin-left: $mrg;
+            margin-right: $mrg;
         }
     }
 }
