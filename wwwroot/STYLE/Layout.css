@@ -23,6 +23,9 @@ body .main-content-wrap {
 body .main-content-wrap > .top > div.blog-link-wrap {
   padding: 8px;
 }
+body .main-content-wrap > .top > div.blog-link-wrap > a.link {
+  color: #ff6a00;
+}
 body .main-content-wrap > .top > header {
   display: flex;
   justify-content: flex-start;

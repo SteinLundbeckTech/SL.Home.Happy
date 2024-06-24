@@ -7,7 +7,7 @@
   padding-left: unset;
   text-align: center;
 }
-.text-wrap > .link-wrap a {
+.text-wrap > .link-wrap a.link {
   color: #032c4a;
 }
 .text-wrap > .solutions-wrap a {
@@ -63,6 +63,14 @@
     text-align: unset;
     padding-top: 40px;
     padding-left: 120px;
+  }
+  .text-wrap > .link-wrap > a.link {
+    color: #ffd800;
+    font-weight: bold;
+  }
+  .text-wrap > .link-wrap > a.link:hover {
+    text-shadow: 2px 2px 1px #07335c;
+    text-decoration: none;
   }
   .text-wrap > .solutions-wrap {
     margin-top: 20px;
