@@ -14,4 +14,4 @@ new AssetsConfig(args)
         new Minify(),
         new Content(),
         new SSL(),
-        new DefaultRoute("SL", "Index"));
+        new ControllerRoute("SL", "Index"));
