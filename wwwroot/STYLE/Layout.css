@@ -82,6 +82,9 @@ body .main-content-wrap > .bottom .illu {
   body .main-content-wrap > .top > header > img.logo {
     height: 84px;
   }
+  body .main-content-wrap > .top > div.language-bar {
+    padding: 33px;
+  }
   body .main-content-wrap > .content-wrap > .content {
     width: 1560px;
     margin: auto;

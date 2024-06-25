@@ -105,6 +105,10 @@ body {
                         height: 84px;
                     }
                 }
+
+                & > div.language-bar {
+                    padding: 33px;
+                }
             }
 
             & > .content-wrap {
