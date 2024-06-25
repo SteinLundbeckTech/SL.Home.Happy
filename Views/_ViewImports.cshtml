@@ -1,4 +1,5 @@
 ﻿@using SL.Assets.Core.Components.Content;
+@using SL.Assets.Components;
 
 @inject ILocalizationAccessor _local
 
@@ -6,3 +7,5 @@
 @addTagHelper *, Creator.Components
 @addTagHelper *, SL.Assets.Core
 @addTagHelper *, SL.Home.Happy
+
+@inject IAssetsHelper _helper
